@@ -2,7 +2,7 @@
 WB Covid Hospitals
 
  
-![product image](http://url/to/img.png)
+![product image](https://raw.githubusercontent.com/dyingg/West-Bengal-Covid-Hospitals/master/doc/map.jpg?token=ALHZ7DH2Z6PBULDCHYQ4ZWC67UTBE)
 
 ## Todo
 
@@ -11,6 +11,7 @@ WB Covid Hospitals
 
 - [x] Implement google maps with custom styling
 - [x] Geolocate the user and set map to their location
+- [ ] Figure out colour for Neon UI markers that pertains and keeps the beauty of Map Style
 - [ ] Display hospitals as custom markers on the Map with their available and vacant seats
 - [ ] Create a UI below the map to display graphs of hospitals and how beds are filling up at them
 - [ ] Implement a posh graph in the hospital UI to show the filling of seats
