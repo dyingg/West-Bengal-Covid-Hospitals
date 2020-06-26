@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   withScriptjs,
   withGoogleMap,
@@ -8,6 +8,8 @@ import {
 } from "react-google-maps";
 
 import MapStyle from "./MapStyle.js";
+import Coords from "./Coords.js";
+
 import { compose, withProps } from "recompose";
 
 const MyMapComponent = compose(
@@ -21,6 +23,8 @@ const MyMapComponent = compose(
   withScriptjs,
   withGoogleMap
 )(({ lat, lng }) => {
+  const [hospitalMarkers, updateHospitalMarkers] = useState(Coords);
+
   return (
     <GoogleMap
       defaultOptions={{
@@ -33,12 +37,16 @@ const MyMapComponent = compose(
       defaultZoom={15}
       center={{ lat, lng }}
     >
-      <Marker
-        position={{
-          lat: 22.568583,
-          lng: 88.411698,
-        }}
-      />
+      {Coords.map((val, index) => (
+        <Marker
+          title={val.name}
+          key={index}
+          position={{
+            lat: val.lat,
+            lng: val.lng,
+          }}
+        />
+      ))}
     </GoogleMap>
   );
 });
