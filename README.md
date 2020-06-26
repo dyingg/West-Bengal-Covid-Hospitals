@@ -1,11 +1,10 @@
 # West-Bengal-Covid-Hospitals
+
 WB Covid Hospitals
 
- 
 ![product image](https://raw.githubusercontent.com/dyingg/West-Bengal-Covid-Hospitals/master/doc/map.jpg?token=ALHZ7DH2Z6PBULDCHYQ4ZWC67UTBE)
 
 ## Todo
-
 
 ### Frontend
 
@@ -16,16 +15,13 @@ WB Covid Hospitals
 - [ ] Create a UI below the map to display graphs of hospitals and how beds are filling up at them
 - [ ] Implement a posh graph in the hospital UI to show the filling of seats
 
-
 ### Backend
 
 - [ ] Create a database structure and populate hospital co-ords
 - [ ] Write a scraping module to obtain pdf the WB Gov Health site for bed status
-- [ ] Write a parser for the PDF file provided by the government
+- [x] Write a parser for the PDF file provided by the government
 - [ ] Write a Back End API to deliver active data to front end from DB
 
 ### Later
 
 - [ ] Thinking about managing of adding new hospitals
-
-
