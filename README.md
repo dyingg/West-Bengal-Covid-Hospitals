@@ -25,3 +25,7 @@ WB Covid Hospitals
 ### Later
 
 - [ ] Thinking about managing of adding new hospitals
+
+### Other
+
+- [x] Fix repo structure and create provision for backend
