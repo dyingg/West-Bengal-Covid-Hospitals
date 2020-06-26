@@ -4,6 +4,7 @@ import {
   withGoogleMap,
   GoogleMap,
   Marker,
+  OverlayView,
 } from "react-google-maps";
 
 import MapStyle from "./MapStyle.js";
@@ -31,7 +32,14 @@ const MyMapComponent = compose(
       }}
       defaultZoom={15}
       center={{ lat, lng }}
-    ></GoogleMap>
+    >
+      <Marker
+        position={{
+          lat: 22.568583,
+          lng: 88.411698,
+        }}
+      />
+    </GoogleMap>
   );
 });
 
