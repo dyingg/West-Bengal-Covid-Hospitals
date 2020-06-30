@@ -11,11 +11,11 @@ body {
 
 .overlay {
   display: flex;
-  background-color: #151a30;
+  background-color: red;
   box-shadow: 12px 8px 24px rgba(0, 0, 0, 0.298214);
   border-radius: 20px;
-  padding: 10px 0px;
-  padding-right: 20px;
+  padding: 10px 10px;
+  padding-right: 10px;
   font-style: normal;
   font-weight: bold;
 }

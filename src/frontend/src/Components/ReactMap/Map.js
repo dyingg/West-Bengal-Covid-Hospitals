@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 import { LineChart, Line } from "recharts";
 
-import AMRI from "./amri.jpg";
-
 import GoogleMap from "./GoogleMap";
 import Coords from "./Coords";
 
@@ -63,12 +61,12 @@ function HospitalOverlay({ lat, lng, name }) {
       mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
     >
       <div className="overlay">
-        <img
+        {/* <img
           src={AMRI}
           height={"100px"}
           width={"50px"}
           style={{ borderRadius: "5px", margin: "0 10px" }}
-        />
+        /> */}
         <div>
           <h1
             style={{
@@ -79,15 +77,15 @@ function HospitalOverlay({ lat, lng, name }) {
             {name}
           </h1>
           <LineChart
-            width={100}
-            height={30}
+            width={90}
+            height={25}
             data={data}
-            margin={{ top: 15, bottom: 5 }}
+            margin={{ top: 10, bottom: 2 }}
           >
             <Line
               type="monotone"
               dataKey="pv"
-              stroke="#0676ED"
+              stroke="#FFFFFF"
               strokeWidth={2}
               dot={false}
             />
@@ -98,6 +96,7 @@ function HospitalOverlay({ lat, lng, name }) {
               fontSize: "20px",
               fontWeight: "700",
               marginBottom: 0,
+              marginTop: "5 px",
               paddingBottom: 0,
             }}
           >

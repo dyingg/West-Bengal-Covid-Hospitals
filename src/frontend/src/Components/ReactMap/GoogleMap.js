@@ -1,6 +1,6 @@
 import React from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
-import MapStyle from "./MapStyle.js";
+import MapStyle from "./DarkThemed.js";
 const LIBRARIES = ["places"];
 const VERSION = "weekly";
 const loadingElement = (
